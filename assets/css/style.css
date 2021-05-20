@@ -1,0 +1,129 @@
+:root {
+    --primary-color: #0A1128;
+    --white-color: #fff;
+    --gap: 3rem;
+    --ligth-grey-color: #EEEEEE;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+}
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+*/
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--primary-color);
+    font-size: 2rem;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+
+}
+h1 {
+    font-size: 6rem;
+    text-transform: uppercase;
+}
+h2 {
+    font-size: 5.5rem;
+}
+h3 {
+    font-size: 5rem;
+}
+h4 {
+    font-size: 4.5rem;
+}
+h5 {
+    font-size: 4rem;
+}
+h6 {
+    font-size: 3.5rem;
+}
+
+.main-bg {
+    background-image: url('../imgs/bg-main.svg');
+    background-size: cover;
+    background-position: center center;
+    color: var(--white-color);
+
+}
+.white-bg {
+    background-color: var(--white-color);
+}
+
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--gap);
+}
+
+.page {
+    min-height: 100vh;
+}
+
+
+
+.menu {
+    background-color: var(--white-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    border-bottom: 0.15rem solid var(--ligth-grey-color)
+}
+
+.menu-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.menu h1{
+    font-size: 2.3rem;
+
+}
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.menu .links {
+    list-style: none;
+    display: flex;
+}
+
+.menu .links li a{
+    display: block;
+    padding: 2rem;
+    font-size: 1.8rem;
+    position: relative;
+}
+/*Animação ao passar o mouse em cima*/
+.menu .links li a::after {
+    content: '';
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    width: 0; /*Pro elemento não aparecer ante do mouse passar em cima*/
+    height: 0.2rem;
+    background: rgb(130, 0, 252);
+    transition: all 250ms ease-in-out;
+}
+/*Passou o mouse em cima aparece*/
+.menu .links li a:hover::after{
+    width: 50%;
+    left: 25%;
+}
+
+
