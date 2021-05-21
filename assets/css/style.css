@@ -3,6 +3,7 @@
     --white-color: #fff;
     --gap: 3rem;
     --ligth-grey-color: #EEEEEE;
+    --secondary-color: rgb(130, 0, 252);
 }
 
 * {
@@ -61,7 +62,7 @@ h6 {
 }
 
 .main-content {
-    max-width: 1200px;
+    max-width: 120rem;
     margin: 0 auto;
     padding: var(--gap);
 }
@@ -73,7 +74,6 @@ h6 {
 
 
 .menu {
-    background-color: var(--white-color);
     position: fixed;
     top: 0;
     left: 0;
@@ -118,7 +118,7 @@ a {
     left: 50%;
     width: 0; /*Pro elemento não aparecer ante do mouse passar em cima*/
     height: 0.2rem;
-    background: rgb(130, 0, 252);
+    background: var(--secondary-color);
     transition: all 250ms ease-in-out;
 }
 /*Passou o mouse em cima aparece*/
