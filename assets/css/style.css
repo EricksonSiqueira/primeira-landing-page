@@ -135,6 +135,13 @@ a {
     background: var(--secondary-color);
     transition: all 250ms ease-in-out;
 }
+.grid-heading{
+    margin-bottom: 1rem;
+}
+
+.grid-description {
+    margin-bottom: 5rem;
+}
 /*Passou o mouse em cima aparece*/
 .menu .links li a:hover::after{
     width: 50%;
@@ -180,3 +187,39 @@ a {
     text-align: center;
 
 }
+
+/*Top 3 grid*/
+
+.grid-top3-content {
+    height: 100vh;
+    flex-flow: column wrap;
+    justify-content: center;
+    display: flex;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gap);
+    counter-reset: gridcounter;
+}
+
+.grid h3 {
+    font-size: 3rem;
+    position: relative;
+    padding-left: 5rem;
+    padding-bottom: 1rem;
+}
+
+.grid h3::before {
+    counter-increment: gridcounter;
+    content: counter(gridcounter);
+    position: absolute;
+    font-size: 7rem;
+    font-style: italic;
+    top: -3.5rem;
+    left: -1.5rem;
+    transform: rotate(5deg);
+    
+}
+
