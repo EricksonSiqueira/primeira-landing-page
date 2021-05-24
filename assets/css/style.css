@@ -241,3 +241,43 @@ a {
 .gallery-img img:hover {
     transform: translate(-3%, 3%) scale(1.2) rotate(5deg);
 }
+
+/*Linha separando a galeria e o pricing*/
+.line {
+    border-bottom: 0.1px solid var(--primary-color);
+}
+
+/*Tabela do pricing*/
+table {
+    min-width: 36rem;
+    width: 100%;
+    border-collapse: collapse;
+}
+table caption {
+    font-style: italic;
+    font-size: 1.6rem;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+table td, table th {
+    white-space: nowrap;
+    padding: 0.8rem;
+    text-align: left;
+    border: 0.1rem solid var(--ligth-grey-color);
+}
+
+table tfoot {
+    text-align: center;
+}
+
+tfoot td {
+    background-color: var(--ligth-grey-color);
+}
+thead th {
+    background-color: var(--ligth-grey-color);
+}
+
+.responsive-table {
+    overflow: hidden;
+    overflow-x: auto;
+}
