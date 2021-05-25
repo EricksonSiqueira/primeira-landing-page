@@ -10,16 +10,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+
     <input type="checkbox" role='button' aria-label='Close menu' id='close-menu' class='close-menu'>
     <label class='close-menu-label' for="close-menu" title='close-menu'></label>
 
     <!-- Menu de cima fixado -->
     <aside class='menu white-bg'>
         <div class='main-content menu-content'>
-            <h1 class='logo'><a href="#">Logo</a></h1>
+            <h1 class='logo' onclick="getElementById('close-menu').checked = false;"><a href="#home">Logo</a></h1>
             <nav>
-                <ul class='links'>
+                <ul class='links' onclick="getElementById('close-menu').checked = false;">
                     <li><a href="#intro">Intro</a></li>
                     <li><a href="#grid-top3">Grid top 3</a></li>
                     <li><a href="#gallery">Gallery</a></li>
