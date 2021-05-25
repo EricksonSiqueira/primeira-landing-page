@@ -436,4 +436,8 @@ body .full-width {
         content:'×'
     }
 
+    .space {
+        display: none;
+    }
+
 }
