@@ -368,6 +368,23 @@ body .full-width {
     display: none;
 }
 
+.back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: var(--white-color);
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.8rem;
+    color: var(--primary-color);
+    transform: rotate(-90deg);
+    font-size: 2.8rem;
+    border: 0.1rem solid var(--primary-color);
+}
+
 /*Medias queries*/
 
 @media (max-width: 800px) {
@@ -427,7 +444,7 @@ body .full-width {
         padding: 0.5rem;
         border-radius: 0.4rem;
     }
-    /* × */
+
     .close-menu:checked~.menu {
         display: block;
         content:'×'
